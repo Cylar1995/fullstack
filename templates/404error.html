@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Err0r 404</h1>
+<h2>How did you get here, You should not be here?</h2>
+<style>
+    img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    </style>
+
+<img src="{{ url_for('static', filename='imgs/reboot.gif') }}" alt="glitchy_sys_boot_gif" style="width: auto;";>
+{% endblock %}

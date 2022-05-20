@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'main.css')}}">
+    <script src= "{{url_for('static', filename = 'app.js')}}"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XEON</title>
+</head>
+<body onload="checkCookies()"id="main"> 
+    <a href="{{ url_for('my_view.pageone')}}">About</a>
+    <a href="{{ url_for('my_view.pagetwo')}}">Games</a>
+    <a href="{{ url_for('my_view.pagethree')}}">pc parts</a>
+    <a href="{{ url_for('my_view.pagefour')}}">Page 4</a>
+    <a href="{{ url_for('my_view.pagefive')}}">Page 5</a>
+    <a href="{{ url_for('my_view.pageone')}}">home</a>
+    <button onclick="darkmode()">darkmode</button>
+<div>
+<body>
+
+
+
+</body>
+
+</div> <h4>
+    
+</h4>
+
+
+
+</div>
+
+
+{% block content %}
+{% endblock %}
+</body>
+</html>

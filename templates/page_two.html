@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Games I love!</h1>
+
+<h2> Cyberpunk 2077</h2>
+<Div>
+<p>CDPR's Cyberpunk 2077 is hands down the on of the best fps, 
+    story is about Veronica/vincent after the rocker boy Robert John Linder
+(Johny Silverhand) takes on a corpo called Arasaka when they took the net runner Alt Cunningham (inventer of soul killer)
+70 years later V is sent on a gig to retreave the angram from Araska, V's best freind Jackie Welles gets shot.
+The engram ends up in v's head then gets shot in the head! Now V and Silverhand share the samebody its up to 
+you to figure what do from here! </p>
+</Div>
+<body>
+    <style>
+        img {
+        display: row;
+        margin-left: auto;
+        margin-right: auto;
+        }
+</style>
+<!-- styleing of the images used -->
+</body>
+<img src="{{ url_for('static', filename='imgs/scshot.jpg') }}" alt="photo of jakie" style="width:925px;height:500px;" class="centre"> <img src="{{ url_for('static', filename='imgs/cyberpunksc.jpg') }}" alt="photo of V" style="width:925px;height:500px;" class="centre"> 
+<div>
+<!-- files and and hight of the images -->
+<h4> Fallout 3</h4>
+
+<p>Fallout is considerd by many to be the go to game for a post-apocatiliptic game!
+    I fully Agree since I fist picked the game up on Xbox 360! been hooked ever scince!
+    Well they are not wrong, nothing conpares to the first ever leaving Vault 101 with a rusty 200 year old,
+    10mm pistol an your trusty BB gun.
+    After the master was destroyed at mariposa military base. Supermutants the Enclave, brotherhood of steel are all fighting
+    for control over the Capital Wasteland. Every corner is a risk be careful out in the wastes wanderer!
+</p>
+</div>
+{% endblock %}

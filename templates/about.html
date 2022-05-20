@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>About me!</h1>
+
+<p>Im a cyberpunk/dark electro inspired music producer, 
+in a grindcore band as a sampler and bass guitar player.
+</p>
+
+<div>
+    <p>
+        I use FL studio 12, Akai mpk mini midi keyboard.
+        M-audio XLR and jack DAC (Digital to analog converter)
+        and a Behringer C-1 phantom power XLR microphone.
+    </p>
+
+</div>
+<body>
+
+
+<div></div>
+<style>
+    img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    </style>
+</body>
+</div>
+    <img src="{{ url_for('static', filename='imgs/me.jpg') }}" alt="a photo of me" style="width:650px;height:650px;";>
+{% endblock %}
